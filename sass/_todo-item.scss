@@ -21,13 +21,13 @@
 	&__destroy {
 		background-color: transparent;
 		border: 0;
+		color: red;
 		cursor: pointer;
-		opacity: 0;
+		display: none;
 		position: absolute;
 		right: 5px;
 		top: 50%;
 		transform: translateY(-50%);
-		transition: opacity 0.2s;
 	}
 
 	&__text {
@@ -52,7 +52,7 @@
 	&:hover & {
 
 		&__destroy {
-			opacity: 1;
+			display: block;
 		}
 	}
 

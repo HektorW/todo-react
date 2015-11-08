@@ -25,13 +25,13 @@
   .todo-item__destroy {
     background-color: transparent;
     border: 0;
+    color: red;
     cursor: pointer;
-    opacity: 0;
+    display: none;
     position: absolute;
     right: 5px;
     top: 50%;
-    transform: translateY(-50%);
-    transition: opacity 0.2s; }
+    transform: translateY(-50%); }
   .todo-item__text {
     color: #000;
     position: relative;
@@ -48,7 +48,7 @@
       transition: width 0.2s, opacity 0.3s;
       width: 0; }
   .todo-item:hover .todo-item__destroy {
-    opacity: 1; }
+    display: block; }
   .todo-item--is-completed .todo-item__text {
     color: #aaa; }
     .todo-item--is-completed .todo-item__text:before {
